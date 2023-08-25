@@ -1,7 +1,15 @@
+import { AppClima } from "./components/AppClima";
+import { ClimaProvider } from "./context/ClimaProvider";
+
 const App = () => {
   return (
     <>
-      <div>App</div>
+      <ClimaProvider>
+        <header>
+          <h1>Buscar Clima</h1>
+        </header>
+        <AppClima />
+      </ClimaProvider>
     </>
   );
 };
